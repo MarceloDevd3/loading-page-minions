@@ -5,67 +5,15 @@
     box-sizing: border-box;
 }
 
-@keyframes zoo{
-    0% {
-        transform: scale(0.0);
-        opacity: 0%;
-    }
-    55% {
-        transform: scale(0.5);
-        opacity: 50%;
-    }
-    100% {
-        transform: scale(0.9);
-        opacity: 100%;
-    }
+
+body {
+    font-size: 1em;
+    font-family: Roboto;
+    overflow-x: hidden;
 }
 
-@keyframes start {
-    0%{
-     opacity: 0%;
-    }
-
-    50%{
-      opacity: 55%;  
-    }
-
-    100%{
-    opacity: 100%; 
-    }
-}
-
-body{
-   animation: start 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.minions-together:hover{
-    animation: minZoo 2s ease;
-}
-
-.btn{
-    animation: zoo 5s infinite;
-}
-
-body{
-    font-family: 'Heebo', sans-serif;
-}
-
-
-header {
-    padding-top: 5px;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h3{
-    font-weight: 900;
-}
-
-button{
-    cursor: pointer;
-
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1.3em;
 }
 
 :root{
@@ -74,130 +22,67 @@ button{
     --black: hsl(0, 0%, 15%);
 }
 
-.yellownbox0 {
-    color: var(--black);
-    position: absolute;
-    top: 18rem;
-    width: 100%;
-    height: 950px;
-    background-color: var(--minon-color); 
-    -webkit-clip-path: polygon(0 86%, 100% 75%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 86%, 100% 75%, 100% 100%, 0% 100%);
+
+#navgation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2em;
 }
 
-
-.info p{
-    position: relative;
-    top: 227px;
-    font-size: small;
-    text-align: center;
-    z-index: 10000;
+.nav {
+    display: none;
 }
 
-
-p{
-    opacity: 0.8;
-}
-
-
-.logo{
-    margin-left: 75px;
-    position: relative;
-    left: 80%;
-}
-
-nav {
-    position: relative;
-    left: 85%;
-}
-
-.home{
+#home, #minion , #minion-invet , #ultimo-minion  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    text-align: center;
 }
 
-.home h1 {
-    font-size: 16rem;
+#home img {
+    width: 100%;
+    max-width: 80%;
+}
+
+.home-title {
+    margin-top: .5em;
+    font-size: 5em;
     color: var(--minon-color);
 }
 
-
-
-.banner img {
+#home iframe {
     position: relative;
-    top: -175px;
-    bottom: 0;
-    width: 800px;
-    z-index: 2100;
-}
-
-
-iframe{
-    position: absolute;
-    top: 130%;
-    z-index: 10000;
-}
-
-.meetMe{
-    position: relative;
-    top: 115px;
-    z-index: 100;
-}
-
-.small{
-    font-size: 3rem;
-    text-transform: lowercase;
-    color: #f2ba05;
-}
-
-h3{
-    color: #fff;
-    font-size: 5rem;
-   line-height: 65px;
-   margin-bottom: 13px;
-   text-transform: uppercase;
-}
-
-.minion{
-    height: 328px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 16.5rem;
-    background-color: var(--minon-color);
-}
-
-.info-Meet{
+    z-index: 2;
     width: 400px;
+    height: 200px;
+    margin: 1em 0;
+    max-width: 100%;
 }
 
-.btn{
-    border: none;
-    background-color: #ffd405;
-    color: #fff;
+.yellownbox0 {
+    position:absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 700px;
+    background-color: var(--minon-color);
+    
+    -webkit-clip-path: polygon(0 86%, 100% 75%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 86%, 100% 75%, 100% 100%, 0% 100%);
 }
 
-.btn i {
-    font-size: 25px;
+#home .info {
+    height: 300px;
+    background: var(--minon-color);
 }
 
-.btn{
-    position: relative;
-    right: 39%;
-    top: 74%;
-    z-index: 8000;
-    width: 125px;
-    height: 125px;
-    border: 15px solid white;
-    border-radius: 50%;
-}
-
-.btn0{
-    border: 10px solid white;
+ #space {
+    margin-top: 3em;
+    padding: 2em 1.5em;
 }
 
 .yellownbox{
@@ -205,211 +90,62 @@ h3{
     -webkit-clip-path: polygon(0 77%, 100% 78%, 100% 98%, 0 82%);
     clip-path: polygon(0 77%, 100% 78%, 100% 98%, 0 82%);
     position: absolute;
-    top: 50rem;
+    top: 18rem;
     width: 100%;
-    height: 950px;
+    height: 750px;
 }
 
-.yellownbox3{
-    background-color: var(--minon-color);
-    -webkit-clip-path: polygon(0 77%, 100% 78%, 100% 98%, 0 82%);
-    clip-path: polygon(0 77%, 100% 78%, 100% 98%, 0 82%);
-    position: absolute;
-    top: 120rem;
-    width: 100%;
-    height: 950px;
-}
-
-
-
-.minion-invet{
-    height: 325px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 13.5rem;
-    background-color:white;
-}
-
-.minion-invet h3{
-    color: var(--black);
-}
-
-.info-Meet-2{
+#minion {
     position: relative;
-    top: 30%;
-    left: -75px;
-    width: 450px;
-}
+    top: -30px;
 
-.meetMe-2{
-    position: relative;
-    padding-bottom: 19px;
-    top: 110px;
-    right: 75px;
-    z-index: 100;
-}
-
-.minion-invet .yellownbox2{
-    position: absolute;
-    top: 92rem;
-    width: 100%;
-    height: 950px;
-    background-color: var(--minon-color); 
-    -webkit-clip-path: polygon(0 86%, 100% 75%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 86%, 100% 75%, 100% 100%, 0% 100%);
-}
-
-.minion-invet  .btn{
-    position: relative;
-    z-index: 100000;
-    top: 94%;
-    left: 9%;
-    z-index: 8000;
-    width: 125px;
-    height: 125px;
-    border: 12px solid white;
-    border-radius: 50%;
-}
-
-.minion .ultimo-minion{
-    height: 345px;
-    margin-top: 17.5rem;
     background-color: var(--minon-color);
 }
 
-.minion .info-Meet {
-    z-index: 1000;
-    margin-top: 5px;
+#minion img, #minion-invet img, #ultimo-minion  img  {
+  max-width: 100%;
 }
 
-h6{
-    opacity: 0.7;
-}
-
-.nextbtn{
-    font-size: 1.5rem;
-    font-weight: 800;
+.info-Meet {
     position: relative;
-    top: 228px;
-    left: -500px;
+    top: -4em;
+    padding: 2em;
 }
 
-.nextbtninvert{
-    font-size: 1.5rem;
-    font-weight: 800;
-    position: relative;
-    top: 328px;
-    right: -105px;
+h3 {
+    font-size: 2.5em;
 }
 
-.photos{
+.small {
+    font-size: 1.1em;
+}
+
+.btn-line {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20rem;
-}
-
-
-.photo-group img {
-    border: 4px solid white;
-}
-
-
-.photo-1{
-    position: relative;
-    top: -11rem;
-    left: 21rem;
-    width:150px; 
-    height:95px;
-    z-index: 3;
-}
-
-.photo-2{
-    position: relative;
-    left: -8rem;
-    width:360px;
-    z-index:2;
-}
-
-.photo-3{
-    width: 250px;
-    position: relative;
-    top: -10rem;
-    left: 18rem;
+    flex-direction: row;
+   position: relative; 
+   top: 4em;
+   left: -5em;   
     z-index: 1;
 }
 
-.photo-4{
+.btn-line .btn {
     position: relative;
-    top: 3rem;
-    right: 7rem;
-    width: 240px;
-}
-
-.popCorn{
-    width: 325px;
-    position: absolute;
-    top: 210rem;
-    right: 0;
-}
-
-.company{
-    padding: 10rem;
+    width: 75px;
+    height: 75px;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: #fff 5px solid;
 
 }
 
-.company h4{
-    text-align: center;
-    font-size: 10rem;
-    color: var(--minon-color);
-    line-height: 8rem;
-    margin-bottom: 2rem;
+.btn-line .btn i {
+    margin-top: .2em;
+   font-size: 2em;
 }
 
-.company .small {
-    font-size: 4rem;
-    color: black;
+.nextbtn {
+    border: none;
+    background-color: transparent;
 }
 
-.up {
-    text-transform: uppercase;
-}
-
-.row img {
-    width: 550px;
-    margin: 15px 0 15px 0;
-}
-.find {
-    width: 350px;
-    height: 50px;
-    background-color: black;
-    color: #fff;
-    border-radius: 50px;
-}
-
-.minions-pelado{
-    width: 600px;
-} 
-
-.company {
-    padding-bottom:0px ;
-    margin-bottom: 0;
-}
-
-.company .banner img {
-    position: relative;
-    top: -170px;
-    bottom: 0;
-    z-index: 2100;
-}
-
-
-@media (min-width:1440px) {
-    iframe{
-        position: absolute;
-        top: 89%;
-        z-index: 10000;
-    }
-}
